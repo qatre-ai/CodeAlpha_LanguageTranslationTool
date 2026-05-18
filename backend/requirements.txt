@@ -1,0 +1,15 @@
+# ============================================================
+# Language Translation Tool - Backend Dependencies
+# ============================================================
+# Core Framework
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+
+# Translation Engine
+deep-translator==1.11.4
+
+# CORS & Middleware
+python-multipart==0.0.20
+
+# Development
+pydantic==2.10.4

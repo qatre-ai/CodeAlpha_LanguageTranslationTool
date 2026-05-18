@@ -1,0 +1,48 @@
+/* App-specific styles are handled by Tailwind utility classes */
+/* This file is kept for any future custom CSS animations */
+
+/* Smooth swap-rotation animation for the language swap button */
+@keyframes spin-180 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  
+  .animate-spin-180 {
+    animation: spin-180 0.4s ease-in-out;
+  }
+  
+  /* Pulse animation for the loading spinner */
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(0.8);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+    }
+  }
+  
+  .animate-pulse-ring {
+    animation: pulse-ring 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  }
+  
+  /* Fade-in animation for translated text */
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.4s ease-out;
+  }
